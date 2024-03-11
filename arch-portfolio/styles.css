@@ -1,0 +1,142 @@
+:root{
+    --nav-color: #e7cab5;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body{
+
+    margin-right: 30px;
+ }
+
+
+.container{
+
+    display: grid;
+    grid-template-columns: 200px auto;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+
+    list-style: none;
+}
+
+/*NAV*/
+
+
+
+.nav-main{
+    display: flex;
+    flex-direction: column;
+    background: url(./img/acda128a7f0b5d5d3663340ab2a9d6c7.jpg)no-repeat center center/cover;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+
+    
+    
+
+}
+
+.nav-main .nav-tittle{
+
+    padding: 50px 30px;
+
+}
+
+.nav-menu{
+
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-right: 70px;
+    
+}
+
+.nav-menu li{
+
+    margin-top: 10px;
+    padding: 10px 10px;
+    font-size: 17px;
+    margin-left: 40px;
+    color: black;
+    
+
+}
+
+.nav-menu li:hover{
+
+    text-decoration: underline;
+}
+
+.nav-main .nav-tittle{
+
+    padding: 30px 30px;
+
+}
+
+.social{
+    margin-left: 43px;
+    margin-top: 20px;
+}
+
+.social p{
+
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 15px;
+    justify-content: flex-end;
+}
+
+.links{
+    display: flex;
+    
+}
+
+
+.links a {
+
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+
+
+.project-tittle {
+    background-color: #f0f0f0; 
+    padding: 30px; 
+    grid-row: 1;
+    font-size: 0.8rem;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+    position: sticky;
+
+}
+
+/*GALLERY*/
+
+
+.gallery-selector{
+
+    display: grid;
+    grid-template-rows:  auto repeat(3, 1fr);
+    gap: 5px;
+}
+
+.gallery-selector img {
+    width: 100%; /* Las imágenes llenan el ancho de su contenedor */
+    height: 100%; /* Mantienen la proporción original */
+    border-radius: 8px; /* Bordes redondeados (opcional) */
+    grid-row: span 1;
+    object-fit: cover;
+}
